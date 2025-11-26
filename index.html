@@ -1,136 +1,1519 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Astral by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper-->
-			<div id="wrapper">
-
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="www.linkedin.com/in/mdcyber01" class="icon brands fa-twitter"><span>Twitter</span></a>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Ruby Yang</h1>
-									<p>Cybersecurity and Medical device Compliance Officer</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
-
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Article</h2>
-								</header>
-								<p>
-									I stumbled into the world of cybersecurity from the medical device field.
-									Here, I'm sharing my journey and thoughts on compliance. Hope you enjoy!
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資安新聞中心 | Security News Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #111827;
+            --bg-card: #1a2234;
+            --bg-card-hover: #1f2a42;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+            --accent-purple: #8b5cf6;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --border-color: #1f2937;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --radius: 12px;
+            --radius-sm: 8px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        /* 背景效果 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, transparent 100%);
+            padding: 40px 0 60px;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .logo-icon {
+            font-size: 48px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+        
+        .update-info {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .stat-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            font-size: 0.9rem;
+        }
+        
+        .stat-badge .icon {
+            font-size: 1.1rem;
+        }
+        
+        .stat-badge .number {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        /* 下載按鈕區 */
+        .download-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        .download-btn .btn-icon {
+            font-size: 1.2rem;
+        }
+        
+        .excel-btn {
+            background: linear-gradient(135deg, #217346, #185c37);
+            color: white;
+            border-color: #185c37;
+        }
+        
+        .excel-btn:hover {
+            background: linear-gradient(135deg, #2d8f59, #217346);
+        }
+        
+        .csv-btn {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            border-color: #2563eb;
+        }
+        
+        .csv-btn:hover {
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+        }
+        
+        .json-btn {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+        
+        .json-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-cyan);
+        }
+        
+        /* 更新按鈕 */
+        .update-btn {
+            background: linear-gradient(135deg, var(--accent-green), #059669);
+            color: white;
+            border-color: #059669;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .update-btn:hover {
+            background: linear-gradient(135deg, #10b981, var(--accent-green));
+        }
+        
+        .update-btn.loading {
+            pointer-events: none;
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            border-color: #4b5563;
+        }
+        
+        .update-btn.loading .btn-icon {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* 進度條 */
+        .progress-container {
+            margin-top: 20px;
+            padding: 16px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+            border-radius: 4px;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin: 0;
+        }
+        
+        /* 來源管理區塊 */
+        .source-manager {
+            margin-bottom: 30px;
+        }
+        
+        .source-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius) var(--radius) 0 0;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .source-header:hover {
+            background: var(--bg-card);
+        }
+        
+        .source-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .toggle-icon {
+            font-size: 0.9rem;
+            transition: transform 0.3s;
+            color: var(--text-muted);
+        }
+        
+        .toggle-icon.rotated {
+            transform: rotate(180deg);
+        }
+        
+        .source-panel {
+            display: none;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-radius: 0 0 var(--radius) var(--radius);
+            padding: 24px;
+        }
+        
+        .source-panel.open {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+        
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .source-form {
+            margin-bottom: 24px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 16px;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 200px;
+        }
+        
+        .form-group.flex-grow {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .form-group label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            padding: 12px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+        }
+        
+        .add-source-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .add-source-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(6, 182, 212, 0.3);
+        }
+        
+        .current-sources {
+            margin-bottom: 20px;
+        }
+        
+        .current-sources h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .sources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px;
+        }
+        
+        .source-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            transition: all 0.2s;
+        }
+        
+        .source-item:hover {
+            border-color: var(--accent-cyan);
+        }
+        
+        .source-item.default {
+            border-left: 3px solid var(--accent-cyan);
+        }
+        
+        .source-item.custom {
+            border-left: 3px solid var(--accent-purple);
+        }
+        
+        .source-info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .source-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+        
+        .source-url {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .source-badge {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 100px;
+            margin-left: 8px;
+        }
+        
+        .source-badge.default {
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent-cyan);
+        }
+        
+        .source-badge.custom {
+            background: rgba(139, 92, 246, 0.2);
+            color: var(--accent-purple);
+        }
+        
+        .delete-source-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+        
+        .delete-source-btn:hover {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+        }
+        
+        .source-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+        
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .action-btn:hover {
+            border-color: var(--accent-cyan);
+            background: var(--bg-card-hover);
+        }
+        
+        .reset-btn:hover {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+        }
+        
+        .source-hint {
+            padding: 16px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: var(--radius-sm);
+        }
+        
+        .source-hint p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        
+        .source-hint p + p {
+            margin-top: 8px;
+        }
+        
+        /* Toast 通知 */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            padding: 16px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            animation: toastIn 0.3s ease;
+        }
+        
+        .toast.success {
+            border-left: 4px solid var(--accent-green);
+        }
+        
+        .toast.error {
+            border-left: 4px solid var(--accent-red);
+        }
+        
+        @keyframes toastIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* 搜尋與篩選 */
+        .filters {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin: -30px auto 40px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .filter-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 14px 20px 14px 48px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+        }
+        
+        .search-box::before {
+            content: '🔍';
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.1rem;
+        }
+        
+        .filter-select {
+            padding: 14px 40px 14px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            cursor: pointer;
+            min-width: 180px;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239ca3af' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+        }
+        
+        /* 新聞網格 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+        
+        .news-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 24px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .news-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-cyan);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(6, 182, 212, 0.15);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .source-badge {
+            padding: 4px 12px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .date {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            flex-grow: 1;
+        }
+        
+        .card-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .card-title a:hover {
+            color: var(--accent-cyan);
+        }
+        
+        .card-summary {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .card-footer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .category-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: color-mix(in srgb, var(--tag-color) 15%, transparent);
+            border: 1px solid color-mix(in srgb, var(--tag-color) 30%, transparent);
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            color: var(--tag-color);
+            font-weight: 500;
+        }
+        
+        .keywords {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        /* 無結果提示 */
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+        
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .footer-content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+        
+        /* 響應式 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-row {
+                flex-direction: column;
+            }
+            
+            .search-box {
+                min-width: 100%;
+            }
+            
+            .filter-select {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1>資安新聞中心</h1>
+                </div>
+                <p class="subtitle">Security News Hub - 自動收集全球資安新聞</p>
+                <div class="update-info">
+                    <span class="stat-badge">
+                        <span class="icon">📰</span>
+                        <span class="number">12</span> 則新聞
+                    </span>
+                    <span class="stat-badge">
+                        <span class="icon">🌐</span>
+                        <span class="number">8</span> 個來源
+                    </span>
+                    <span class="stat-badge">
+                        <span class="icon">🕐</span>
+                        更新於 2025-11-26 02:09
+                    </span>
+                </div>
+                <div class="download-buttons">
+                    <button class="download-btn update-btn" id="updateBtn" onclick="startCollection()">
+                        <span class="btn-icon" id="updateIcon">🔄</span>
+                        <span id="updateText">立即更新</span>
+                    </button>
+                    <a href="security_news_report.xlsx" class="download-btn excel-btn" download>
+                        <span class="btn-icon">📊</span>
+                        下載 Excel 報表
+                    </a>
+                    <a href="security_news.csv" class="download-btn csv-btn" download>
+                        <span class="btn-icon">📄</span>
+                        下載 CSV
+                    </a>
+                    <a href="data.json" class="download-btn json-btn" download>
+                        <span class="btn-icon">🔧</span>
+                        下載 JSON
+                    </a>
+                </div>
+                
+                <!-- 更新進度條 -->
+                <div class="progress-container" id="progressContainer" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">準備中...</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 來源管理區塊 -->
+    <section class="source-manager container">
+        <div class="source-header" onclick="toggleSourcePanel()">
+            <h2>🌐 新聞來源管理</h2>
+            <span class="toggle-icon" id="toggleIcon">▼</span>
+        </div>
+        <div class="source-panel" id="sourcePanel">
+            <div class="source-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="sourceName">來源名稱</label>
+                        <input type="text" id="sourceName" placeholder="例如：資安人">
+                    </div>
+                    <div class="form-group flex-grow">
+                        <label for="sourceUrl">RSS Feed 網址</label>
+                        <input type="url" id="sourceUrl" placeholder="https://example.com/rss">
+                    </div>
+                    <button class="add-source-btn" onclick="addSource()">
+                        <span>➕</span> 新增來源
+                    </button>
+                </div>
+            </div>
+            
+            <div class="current-sources">
+                <h3>📋 目前的新聞來源</h3>
+                <div class="sources-grid" id="sourcesGrid">
+                    <!-- 來源列表由 JavaScript 產生 -->
+                </div>
+            </div>
+            
+            <div class="source-actions">
+                <button class="action-btn export-btn" onclick="exportSources()">
+                    <span>📥</span> 匯出來源設定
+                </button>
+                <label class="action-btn import-btn">
+                    <span>📤</span> 匯入來源設定
+                    <input type="file" id="importFile" accept=".json" onchange="importSources(event)" hidden>
+                </label>
+                <button class="action-btn reset-btn" onclick="resetSources()">
+                    <span>🔄</span> 重設為預設
+                </button>
+            </div>
+            
+            <div class="source-hint">
+                <p>💡 <strong>提示：</strong>新增或修改來源後，需要重新執行 Python 程式來抓取新聞。</p>
+                <p>來源設定會儲存在瀏覽器中，也可匯出為 JSON 檔案供程式使用。</p>
+            </div>
+        </div>
+    </section>
+    
+    <main class="container">
+        <div class="filters">
+            <div class="filter-row">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜尋新聞標題、內容、關鍵字...">
+                </div>
+                <select class="filter-select" id="sourceFilter">
+                    <option value="">所有來源</option>
+                    <option value="The Hacker News">The Hacker News</option>
+<option value="SecurityWeek">SecurityWeek</option>
+<option value="BleepingComputer">BleepingComputer</option>
+<option value="iThome 資安">iThome 資安</option>
+<option value="Dark Reading">Dark Reading</option>
+<option value="TWCERT/CC">TWCERT/CC</option>
+<option value="Krebs on Security">Krebs on Security</option>
+<option value="HackRead">HackRead</option>
+                </select>
+                <select class="filter-select" id="categoryFilter">
+                    <option value="">所有分類</option>
+                    <option value="惡意程式/Malware">惡意程式/Malware</option>
+<option value="漏洞/Vulnerability">漏洞/Vulnerability</option>
+<option value="供應鏈/Supply Chain">供應鏈/Supply Chain</option>
+<option value="駭客攻擊/Hacking">駭客攻擊/Hacking</option>
+<option value="網路釣魚/Phishing">網路釣魚/Phishing</option>
+<option value="資料外洩/Data Breach">資料外洩/Data Breach</option>
+<option value="物聯網/IoT">物聯網/IoT</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="news-grid" id="newsGrid">
+            
+            <article class="news-card" data-category="惡意程式/Malware" data-source="The Hacker News">
+                <div class="card-header">
+                    <span class="source-badge">The Hacker News</span>
+                    <span class="date">2025-11-24 15:30</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/1" target="_blank" rel="noopener">微軟 WSUS 漏洞遭駭客利用散布 ShadowPad 惡意程式</a>
+                </h3>
+                <p class="card-summary">資安業者 AhnLab 揭露，駭客正在利用微軟 Windows Server Update Services (WSUS) 的漏洞 CVE-2025-59287 進行攻擊，在取得初始存取權限後，透過 PowerCat 工具取得系統權限，進而部署 ShadowPad 後門程式。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #e74c3c">
+                        🦠 惡意程式/Malware
+                    </span>
+                    <span class="keywords">ShadowPad, WSUS, CVE-2025-59287, backdoor</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="漏洞/Vulnerability" data-source="SecurityWeek">
+                <div class="card-header">
+                    <span class="source-badge">SecurityWeek</span>
+                    <span class="date">2025-11-23 10:15</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/2" target="_blank" rel="noopener">Oracle Identity Manager 重大漏洞已遭攻擊利用</a>
+                </h3>
+                <p class="card-summary">美國 CISA 將 Oracle Identity Manager 的 CVE-2025-61757 漏洞加入已知遭利用漏洞清單，該漏洞 CVSS 評分高達 9.8，可能導致未經認證的遠端程式碼執行。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #f39c12">
+                        🔓 漏洞/Vulnerability
+                    </span>
+                    <span class="keywords">Oracle, CVE-2025-61757, RCE, CISA</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="漏洞/Vulnerability" data-source="BleepingComputer">
+                <div class="card-header">
+                    <span class="source-badge">BleepingComputer</span>
+                    <span class="date">2025-11-22 09:45</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/4" target="_blank" rel="noopener">Grafana 修補 CVSS 10.0 滿分漏洞</a>
+                </h3>
+                <p class="card-summary">Grafana 發布安全更新修補 CVE-2025-41115 漏洞，該漏洞存在於 SCIM 身分管理功能中，可能導致權限提升或用戶冒充，CVSS 評分達到最高的 10.0 分。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #f39c12">
+                        🔓 漏洞/Vulnerability
+                    </span>
+                    <span class="keywords">Grafana, CVE-2025-41115, SCIM, privilege escalation</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="供應鏈/Supply Chain" data-source="iThome 資安">
+                <div class="card-header">
+                    <span class="source-badge">iThome 資安</span>
+                    <span class="date">2025-11-21 14:20</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/3" target="_blank" rel="noopener">中國駭客 APT24 入侵台灣數位行銷公司發動供應鏈攻擊</a>
+                </h3>
+                <p class="card-summary">Google 威脅情報小組揭露中國駭客組織 APT24 的網路間諜活動，其中最受關注的是這些駭客多次滲透特定台灣數位行銷公司，從而對供應鏈進行攻擊。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #3498db">
+                        🔗 供應鏈/Supply Chain
+                    </span>
+                    <span class="keywords">APT24, 供應鏈攻擊, 中國駭客, Google</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="駭客攻擊/Hacking" data-source="Dark Reading">
+                <div class="card-header">
+                    <span class="source-badge">Dark Reading</span>
+                    <span class="date">2025-11-21 11:30</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/6" target="_blank" rel="noopener">伊朗駭客利用網路攻擊協助軍事行動</a>
+                </h3>
+                <p class="card-summary">Amazon 揭露伊朗駭客 Imperial Kitten 與 MuddyWater 的間諜活動，他們成功入侵軍用船艦的自動識別平臺與監視器，協助軍隊進行精準的飛彈攻擊。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #e67e22">
+                        👤 駭客攻擊/Hacking
+                    </span>
+                    <span class="keywords">Iran, Imperial Kitten, MuddyWater, espionage</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="惡意程式/Malware" data-source="TWCERT/CC">
+                <div class="card-header">
+                    <span class="source-badge">TWCERT/CC</span>
+                    <span class="date">2025-11-20 16:00</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/5" target="_blank" rel="noopener">CrazyHunter 勒索軟體專門鎖定台灣企業攻擊</a>
+                </h3>
+                <p class="card-summary">資安研究人員發現 CrazyHunter 勒索軟體專門針對台灣企業發動攻擊，受害目標從醫療院所擴大至上市櫃公司，造成嚴重影響。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #e74c3c">
+                        🦠 惡意程式/Malware
+                    </span>
+                    <span class="keywords">CrazyHunter, 勒索軟體, ransomware, 台灣</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="惡意程式/Malware" data-source="Krebs on Security">
+                <div class="card-header">
+                    <span class="source-badge">Krebs on Security</span>
+                    <span class="date">2025-11-19 08:20</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/7" target="_blank" rel="noopener">LockBit、DragonForce 與 Qilin 勒索軟體組織結盟</a>
+                </h3>
+                <p class="card-summary">ReliaQuest 發布第三季勒索軟體報告，顯示 LockBit、DragonForce 與 Qilin 已展開結盟，將分享彼此的戰術及資源，對企業組織構成更大威脅。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #e74c3c">
+                        🦠 惡意程式/Malware
+                    </span>
+                    <span class="keywords">LockBit, DragonForce, Qilin, ransomware</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="駭客攻擊/Hacking" data-source="The Hacker News">
+                <div class="card-header">
+                    <span class="source-badge">The Hacker News</span>
+                    <span class="date">2025-11-18 13:45</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/8" target="_blank" rel="noopener">Anthropic 示警：中國駭客濫用 Claude Code 進行攻擊</a>
+                </h3>
+                <p class="card-summary">Anthropic 發布安全報告指出，中國駭客組織 GTG-1002 濫用 Claude Code 完成逾八成攻擊任務，顯現 AI 工具被武器化的威脅正在升溫。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #e67e22">
+                        👤 駭客攻擊/Hacking
+                    </span>
+                    <span class="keywords">Anthropic, Claude Code, AI, 中國駭客</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="網路釣魚/Phishing" data-source="iThome 資安">
+                <div class="card-header">
+                    <span class="source-badge">iThome 資安</span>
+                    <span class="date">2025-11-17 10:00</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/9" target="_blank" rel="noopener">財政部警示普發現金假冒網站詐騙</a>
+                </h3>
+                <p class="card-summary">適逢全民普發現金開放登記前夕，財政部發出警示，呼籲民眾警惕假冒政府網站的詐騙行為，務必識別正確的政府網域。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #1abc9c">
+                        🎣 網路釣魚/Phishing
+                    </span>
+                    <span class="keywords">詐騙, phishing, 財政部, 普發現金</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="資料外洩/Data Breach" data-source="HackRead">
+                <div class="card-header">
+                    <span class="source-badge">HackRead</span>
+                    <span class="date">2025-11-16 15:20</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/10" target="_blank" rel="noopener">Salesloft Drift 供應鏈攻擊波及多家資安業者</a>
+                </h3>
+                <p class="card-summary">Salesloft Drift 供應鏈攻擊事故持續擴大，Zscaler、Cloudflare、Palo Alto Networks 等多家資安業者證實受害，Salesforce 系統資料遭到外洩。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #9b59b6">
+                        📤 資料外洩/Data Breach
+                    </span>
+                    <span class="keywords">Salesloft, supply chain, Salesforce, data breach</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="供應鏈/Supply Chain" data-source="SecurityWeek">
+                <div class="card-header">
+                    <span class="source-badge">SecurityWeek</span>
+                    <span class="date">2025-11-15 09:30</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/11" target="_blank" rel="noopener">VS Code 市集延伸套件命名漏洞恐遭濫用</a>
+                </h3>
+                <p class="card-summary">微軟 VS Code 市集新發布的延伸套件未禁止沿用已下架套件名稱，研究人員警告此機制可能被攻擊者濫用進行供應鏈攻擊。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #3498db">
+                        🔗 供應鏈/Supply Chain
+                    </span>
+                    <span class="keywords">VS Code, supply chain, Microsoft, extension</span>
+                </div>
+            </article>
+            
+            <article class="news-card" data-category="物聯網/IoT" data-source="TWCERT/CC">
+                <div class="card-header">
+                    <span class="source-badge">TWCERT/CC</span>
+                    <span class="date">2025-11-14 14:10</span>
+                </div>
+                <h3 class="card-title">
+                    <a href="https://example.com/news/12" target="_blank" rel="noopener">小烏龜漏洞引發華碩路由器安全疑慮</a>
+                </h3>
+                <p class="card-summary">台灣資安研究人員揭露「小烏龜」漏洞，中國駭客鎖定華碩路由器攻擊以架設 ORB 網路匿蹤，另有 PlushDaemon 組織入侵路由器竄改 DNS。</p>
+                <div class="card-footer">
+                    <span class="category-tag" style="--tag-color: #8bc34a">
+                        📱 物聯網/IoT
+                    </span>
+                    <span class="keywords">路由器, ASUS, DNS, PlushDaemon</span>
+                </div>
+            </article>
+            
+        </div>
+        
+        <div class="no-results" id="noResults" style="display: none;">
+            <div class="no-results-icon">🔍</div>
+            <p>沒有找到符合條件的新聞</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>資料來源包含 iThome、TWCERT/CC、The Hacker News、Krebs on Security 等</p>
+                <p style="margin-top: 8px;">自動收集系統 | 僅供資安研究與學習用途</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // 篩選功能
+        const searchInput = document.getElementById('searchInput');
+        const sourceFilter = document.getElementById('sourceFilter');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const newsGrid = document.getElementById('newsGrid');
+        const noResults = document.getElementById('noResults');
+        const newsCards = document.querySelectorAll('.news-card');
+        
+        function filterNews() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedSource = sourceFilter.value;
+            const selectedCategory = categoryFilter.value;
+            
+            let visibleCount = 0;
+            
+            newsCards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const summary = card.querySelector('.card-summary').textContent.toLowerCase();
+                const keywords = card.querySelector('.keywords')?.textContent.toLowerCase() || '';
+                const source = card.dataset.source;
+                const category = card.dataset.category;
+                
+                const matchesSearch = !searchTerm || 
+                    title.includes(searchTerm) || 
+                    summary.includes(searchTerm) ||
+                    keywords.includes(searchTerm);
+                    
+                const matchesSource = !selectedSource || source === selectedSource;
+                const matchesCategory = !selectedCategory || category === selectedCategory;
+                
+                if (matchesSearch && matchesSource && matchesCategory) {
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+        
+        // 事件監聽
+        searchInput.addEventListener('input', filterNews);
+        sourceFilter.addEventListener('change', filterNews);
+        categoryFilter.addEventListener('change', filterNews);
+        
+        // 搜尋框清空按鈕（按 Escape）
+        searchInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                searchInput.value = '';
+                filterNews();
+            }
+        });
+        
+        // ===== 來源管理功能 =====
+        
+        // 預設來源
+        const defaultSources = {
+            'iThome 資安': 'https://www.ithome.com.tw/security/rss',
+            'TWCERT/CC': 'https://www.twcert.org.tw/tw/rss-104-1.xml',
+            'The Hacker News': 'https://feeds.feedburner.com/TheHackersNews',
+            'Krebs on Security': 'https://krebsonsecurity.com/feed/',
+            'BleepingComputer': 'https://www.bleepingcomputer.com/feed/',
+            'Dark Reading': 'https://www.darkreading.com/rss.xml',
+            'SecurityWeek': 'https://feeds.feedburner.com/securityweek',
+            'Threatpost': 'https://threatpost.com/feed/',
+            'HackRead': 'https://www.hackread.com/feed/',
+            'Sophos News': 'https://news.sophos.com/en-us/feed/',
+        };
+        
+        // 從 localStorage 載入來源
+        function loadSources() {
+            const saved = localStorage.getItem('securityNewsSources');
+            if (saved) {
+                return JSON.parse(saved);
+            }
+            return { ...defaultSources };
+        }
+        
+        // 儲存來源到 localStorage
+        function saveSources(sources) {
+            localStorage.setItem('securityNewsSources', JSON.stringify(sources));
+        }
+        
+        // 渲染來源列表
+        function renderSources() {
+            const sources = loadSources();
+            const grid = document.getElementById('sourcesGrid');
+            grid.innerHTML = '';
+            
+            Object.entries(sources).forEach(([name, url]) => {
+                const isDefault = defaultSources.hasOwnProperty(name) && defaultSources[name] === url;
+                const item = document.createElement('div');
+                item.className = `source-item ${isDefault ? 'default' : 'custom'}`;
+                item.innerHTML = `
+                    <div class="source-info">
+                        <div class="source-name">
+                            ${name}
+                            <span class="source-badge ${isDefault ? 'default' : 'custom'}">
+                                ${isDefault ? '預設' : '自訂'}
+                            </span>
+                        </div>
+                        <div class="source-url" title="${url}">${url}</div>
+                    </div>
+                    <button class="delete-source-btn" onclick="deleteSource('${name.replace(/'/g, "\'")}')" title="刪除">
+                        🗑️
+                    </button>
+                `;
+                grid.appendChild(item);
+            });
+        }
+        
+        // 切換來源面板
+        function toggleSourcePanel() {
+            const panel = document.getElementById('sourcePanel');
+            const icon = document.getElementById('toggleIcon');
+            panel.classList.toggle('open');
+            icon.classList.toggle('rotated');
+            
+            if (panel.classList.contains('open')) {
+                renderSources();
+            }
+        }
+        
+        // 新增來源
+        function addSource() {
+            const nameInput = document.getElementById('sourceName');
+            const urlInput = document.getElementById('sourceUrl');
+            
+            const name = nameInput.value.trim();
+            const url = urlInput.value.trim();
+            
+            if (!name) {
+                showToast('請輸入來源名稱', 'error');
+                nameInput.focus();
+                return;
+            }
+            
+            if (!url) {
+                showToast('請輸入 RSS Feed 網址', 'error');
+                urlInput.focus();
+                return;
+            }
+            
+            // 驗證 URL 格式
+            try {
+                new URL(url);
+            } catch {
+                showToast('請輸入有效的網址', 'error');
+                urlInput.focus();
+                return;
+            }
+            
+            const sources = loadSources();
+            
+            if (sources.hasOwnProperty(name)) {
+                if (!confirm(`來源「${name}」已存在，要覆蓋嗎？`)) {
+                    return;
+                }
+            }
+            
+            sources[name] = url;
+            saveSources(sources);
+            renderSources();
+            
+            nameInput.value = '';
+            urlInput.value = '';
+            
+            showToast(`已新增來源「${name}」`, 'success');
+        }
+        
+        // 刪除來源
+        function deleteSource(name) {
+            if (!confirm(`確定要刪除來源「${name}」嗎？`)) {
+                return;
+            }
+            
+            const sources = loadSources();
+            delete sources[name];
+            saveSources(sources);
+            renderSources();
+            
+            showToast(`已刪除來源「${name}」`, 'success');
+        }
+        
+        // 匯出來源設定
+        function exportSources() {
+            const sources = loadSources();
+            const data = JSON.stringify(sources, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'security_news_sources.json';
+            a.click();
+            
+            URL.revokeObjectURL(url);
+            showToast('來源設定已匯出', 'success');
+        }
+        
+        // 匯入來源設定
+        function importSources(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const imported = JSON.parse(e.target.result);
+                    
+                    if (typeof imported !== 'object' || Array.isArray(imported)) {
+                        throw new Error('格式錯誤');
+                    }
+                    
+                    const sources = loadSources();
+                    let count = 0;
+                    
+                    Object.entries(imported).forEach(([name, url]) => {
+                        if (typeof url === 'string' && url.startsWith('http')) {
+                            sources[name] = url;
+                            count++;
+                        }
+                    });
+                    
+                    saveSources(sources);
+                    renderSources();
+                    
+                    showToast(`已匯入 ${count} 個來源`, 'success');
+                } catch (err) {
+                    showToast('匯入失敗：檔案格式不正確', 'error');
+                }
+            };
+            reader.readAsText(file);
+            event.target.value = '';
+        }
+        
+        // 重設為預設來源
+        function resetSources() {
+            if (!confirm('確定要重設為預設來源嗎？所有自訂來源將被清除。')) {
+                return;
+            }
+            
+            saveSources({ ...defaultSources });
+            renderSources();
+            showToast('已重設為預設來源', 'success');
+        }
+        
+        // 顯示 Toast 通知
+        function showToast(message, type = 'success') {
+            const existing = document.querySelector('.toast');
+            if (existing) existing.remove();
+            
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+        
+        // Enter 鍵新增來源
+        document.getElementById('sourceUrl')?.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                addSource();
+            }
+        });
+        
+        // ===== 新聞更新功能 =====
+        
+        const API_BASE = window.location.origin;
+        let isCollecting = false;
+        let statusCheckInterval = null;
+        
+        // 開始收集新聞
+        async function startCollection() {
+            if (isCollecting) return;
+            
+            const updateBtn = document.getElementById('updateBtn');
+            const updateIcon = document.getElementById('updateIcon');
+            const updateText = document.getElementById('updateText');
+            const progressContainer = document.getElementById('progressContainer');
+            const progressFill = document.getElementById('progressFill');
+            const progressText = document.getElementById('progressText');
+            
+            try {
+                // 發送收集請求
+                const response = await fetch(`${API_BASE}/api/collect`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                
+                const result = await response.json();
+                
+                if (!result.success) {
+                    showToast(result.message, 'error');
+                    return;
+                }
+                
+                // 更新 UI 狀態
+                isCollecting = true;
+                updateBtn.classList.add('loading');
+                updateText.textContent = '收集中...';
+                progressContainer.style.display = 'block';
+                progressFill.style.width = '0%';
+                progressText.textContent = '正在初始化...';
+                
+                // 開始輪詢狀態
+                statusCheckInterval = setInterval(checkCollectionStatus, 1000);
+                
+            } catch (error) {
+                showToast('無法連線到伺服器，請確認已啟動 app.py', 'error');
+            }
+        }
+        
+        // 檢查收集狀態
+        async function checkCollectionStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/status`);
+                const status = await response.json();
+                
+                const progressFill = document.getElementById('progressFill');
+                const progressText = document.getElementById('progressText');
+                
+                progressFill.style.width = `${status.progress}%`;
+                progressText.textContent = status.message;
+                
+                // 收集完成
+                if (!status.is_running && isCollecting) {
+                    clearInterval(statusCheckInterval);
+                    isCollecting = false;
+                    
+                    const updateBtn = document.getElementById('updateBtn');
+                    const updateText = document.getElementById('updateText');
+                    
+                    updateBtn.classList.remove('loading');
+                    updateText.textContent = '立即更新';
+                    
+                    if (status.progress === 100) {
+                        showToast(`更新完成！共收集 ${status.total_news} 則新聞`, 'success');
+                        
+                        // 2 秒後重新載入頁面
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 2000);
+                    } else {
+                        showToast(status.message, 'error');
+                        document.getElementById('progressContainer').style.display = 'none';
+                    }
+                }
+                
+            } catch (error) {
+                console.error('狀態檢查失敗:', error);
+            }
+        }
+        
+        // 頁面載入時檢查狀態
+        async function checkInitialStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/status`);
+                const status = await response.json();
+                
+                if (status.is_running) {
+                    isCollecting = true;
+                    document.getElementById('updateBtn').classList.add('loading');
+                    document.getElementById('updateText').textContent = '收集中...';
+                    document.getElementById('progressContainer').style.display = 'block';
+                    statusCheckInterval = setInterval(checkCollectionStatus, 1000);
+                }
+            } catch (error) {
+                // 伺服器未啟動，靜態模式
+                console.log('靜態模式：伺服器未啟動');
+            }
+        }
+        
+        // 頁面載入時執行
+        checkInitialStatus();
+    </script>
+</body>
 </html>
